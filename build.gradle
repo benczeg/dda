@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.benczeg'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '18'
 
 configurations {
 	compileOnly {
@@ -19,16 +19,16 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-web-services'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
+	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.5'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.5'
+	implementation 'org.springframework.boot:spring-boot-starter-web-services:2.7.5'
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools:2.7.5'
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc:11.2.1.jre18'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.7.5'
+	testImplementation 'org.springframework.security:spring-security-test:5.7.3'
 }
 
 tasks.named('test') {
